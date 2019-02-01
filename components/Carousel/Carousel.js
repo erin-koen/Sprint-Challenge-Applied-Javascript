@@ -13,7 +13,7 @@ class Carousel {
     moveRight(){
         images.forEach(image => image.style.display ="none");
         if (this.displayIndex === images.length-1){
-            this.displayIndex = this.displayIndex;
+            this.displayIndex = 0;
         } else {
             this.displayIndex ++
         }
@@ -22,7 +22,7 @@ class Carousel {
     moveLeft(){
         images.forEach(image => image.style.display ="none");
         if (this.displayIndex === 0){
-            this.displayIndex = this.displayIndex;
+            this.displayIndex = images.length-1;
         } else {
             this.displayIndex --
         }
